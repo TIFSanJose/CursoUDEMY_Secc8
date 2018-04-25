@@ -10,13 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+<!--
+        *  el intet-filter permite determinar que activity se va a lanzar al abrir la aplicacion.
+        *  Recortando las tags <intent-filter></intent-filter> y pengando dentro de las tags
+        *  que definen los activitys se puede elegir cual va a ser lanzado al abrir la app
+
+-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

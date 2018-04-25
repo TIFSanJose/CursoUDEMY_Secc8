@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,37 +12,51 @@
         android:id="@+id/etxtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="207dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtEmail" />
 
     <EditText
         android:id="@+id/etxtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="100dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
         android:id="@+id/btnSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
         android:text="Switch"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="286dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword" />
 
     <Button
         android:id="@+id/btnSubmit"
-        android:layout_width="204dp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="371dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtPassword"
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>
