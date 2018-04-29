@@ -1,4 +1,4 @@
-package com.example.cursoudemy.secc8_cursoudemy;
+package com.example.cursoudemy.secc8_cursoudemy.App;
 
 import android.app.Application;
 import android.os.SystemClock;

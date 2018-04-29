@@ -3,17 +3,17 @@
     package="com.example.cursoudemy.secc8_cursoudemy">
 
     <application
-        android:name=".MyApp"
+        android:name=".App.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".Activity.MainActivity"/>
+        <activity android:name=".Activity.LoginActivity"/>
         <activity
-            android:name=".SplashActivity"
+            android:name=".Splash.SplashActivity"
             android:theme="@style/SplashScreen"
             >
 

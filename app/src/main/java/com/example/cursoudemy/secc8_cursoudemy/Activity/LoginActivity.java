@@ -1,4 +1,4 @@
-package com.example.cursoudemy.secc8_cursoudemy;
+package com.example.cursoudemy.secc8_cursoudemy.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,16 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import java.util.regex.Pattern;
+import com.example.cursoudemy.secc8_cursoudemy.R;
+import com.example.cursoudemy.secc8_cursoudemy.Utils.Util;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -110,21 +108,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setCredentialsIfExist(){
-        String email=getUserMailPrefs();
-        String password=getUserPassword();
+        String email= Util.getUserMailPrefs(prefs);
+        String password=Util.getUserPasswordPrefs(prefs);
 
         if(!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)){
             etxtEmail.setText(email);
             etxtPassword.setText(password);
         }
-    }
-
-    private String getUserMailPrefs(){
-        return prefs.getString("email", "");
-    }
-
-    private String getUserPassword(){
-        return prefs.getString("password", "");
     }
 
 }
